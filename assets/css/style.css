@@ -17,6 +17,7 @@ html {
 
 body {
     font-size: 1.6rem;
+    background-color: var(--primary-color);
     font-family: "Poppins";
 }
 
@@ -383,4 +384,231 @@ a {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.42;
+}
+
+.about__inner--reverse {
+    margin-top: 130px;
+    column-gap: 78px;
+    padding-top: 16px;
+}
+
+.about__inner--reverse .about__media {
+    width: 477px;
+}
+
+.about__inner--reverse .about__media::before {
+    display: none;
+}
+
+.about__inner--reverse .about__image {
+    margin-left: 0;
+    width: 458px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 2px #FFF;
+}
+
+.about__inner--reverse .about__body {
+    width: 557;
+}
+
+.about__inner--reverse .about__heading {
+    margin-top: 0;
+    width: 543px;
+}
+
+.about__inner--reverse .about__desc {
+    width: 511px;
+}
+
+.about__inner--reverse .about__list {
+    position: relative;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 56px;
+}
+
+.about__inner--reverse .about-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-bottom: 14px;
+}
+
+.about__inner--reverse .about-item--active::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 95px;
+    height: 2px;
+    background: var(--action-color);
+    bottom: 0;
+    left: 0;
+}
+
+.about__inner--reverse .about-item__icon {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.about__inner--reverse .about-item__detail {
+    color: #48496A;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+.about__inner--reverse .about-item__detail::after {
+    display: none;
+}
+
+.about__inner--reverse .about-item__detail::before {
+    display: none;
+}
+
+.about__inner--reverse .about__list::after,
+.about-content__more::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    opacity: 0.07;
+    background: var(--action-color);
+    border-radius: 9px;
+    bottom: 0;
+    left: 0;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about-content__item {
+    width: 100%;
+    flex-shrink: 0;
+    padding-bottom: 7px;
+}
+
+.about-content__desc {
+    width: 391px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.715;
+}
+
+.about-content__more {
+    display: inline-block;
+    margin-top: 32px;
+    position: relative;
+    color: var(--action-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.about-content__more::after {
+    opacity: 1;
+    height: 1.5px;
+    bottom: -5px;
+}
+
+/* SERVICE */
+
+.service {
+    padding: 68px 0 100px;
+    margin-top: 130px;
+    background: #FFF6ED;
+}
+
+.service__header {
+    text-align: center;
+}
+
+.service__tag {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #5E6085;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.service__body {
+    margin-top: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-item {
+    width: 294px;
+    background-color: #FFF;
+    padding: 28px 22px 30px 28px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+}
+
+.service-item+.service-item {
+    margin-top: 24px;
+}
+
+.service-item__heading::before {
+    display: inline-block;
+    content: "";
+    margin-right: 12px;
+    width: 2px;
+    height: 22px;
+    background: linear-gradient(90deg, #FF5B2E 0.39%, #FFA187 100.29%);
+}
+
+.service-item__heading {
+    display: inline-flex;
+    align-items: center;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.service-item__desc {
+    margin-top: 18px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.714;
+}
+
+.service-item__more {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 6px;
+    margin-top: 24px;
+    color: #34396A;
+    font-family: Sora;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.service__media {
+    width: 447px;
+    height: 621px;
+}
+
+.service__image {
+    object-fit: cover;
+}
+
+.service__cta {
+    margin-top: -17px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 214px;
+    --btn-height: 56px;
+    border: 1px solid var(--action-color);
+    opacity: 0.6;
+    color: var(--action-color);
 }
